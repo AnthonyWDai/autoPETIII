@@ -79,15 +79,15 @@ class Autopet_model:
         pet_mha = os.listdir(os.path.join(self.input_path, "images/pet/"))[0]
         uuid = os.path.splitext(ct_mha)[0]
 
-        # Convert CT and PET images to .nii.gz format
-        self.convert_mha_to_nii(
-            os.path.join(self.input_path, "images/ct/", ct_mha),
-            os.path.join(self.nii_path, "TCIA_001_0000.nii.gz"),
-        )
-        self.convert_mha_to_nii(
-            os.path.join(self.input_path, "images/pet/", pet_mha),
-            os.path.join(self.nii_path, "TCIA_001_0001.nii.gz"),
-        )
+        # # Convert CT and PET images to .nii.gz format
+        # self.convert_mha_to_nii(
+        #     os.path.join(self.input_path, "images/ct/", ct_mha),
+        #     os.path.join(self.nii_path, "TCIA_001_0000.nii.gz"),
+        # )
+        # self.convert_mha_to_nii(
+        #     os.path.join(self.input_path, "images/pet/", pet_mha),
+        #     os.path.join(self.nii_path, "TCIA_001_0001.nii.gz"),
+        # )
         return uuid
 
     def write_outputs(self, uuid):
