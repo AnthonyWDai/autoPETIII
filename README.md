@@ -1,3 +1,6 @@
+RuntimeError: weight 
+tensor should be defined either for all or no classes
+
 # AutoPET III Challenge: Final Submission
 
 This repository contains the code and models used for the final submission in the **AutoPET III Challenge**. This repository is released under the MIT License.
